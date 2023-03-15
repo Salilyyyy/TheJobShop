@@ -1,0 +1,36 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.machine{
+    background-size: cover;
+    width: 100%;
+    height:100%;
+}
+.tableContainer{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    padding-top: 20px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tableContainer input{
+    margin: 10px;
+    display:inline-table;
+    font-size: 20px;
+   
+}
+
+
+
+.tableMachines{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ffffff;
+    text-align: left;
+   
+}

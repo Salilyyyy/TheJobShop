@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name":"Bottle Expansion Mold Machine"
+    },
+    {
+        "id": 2,
+        "name":"Water Cleaning Machine"
+    },
+    {
+        "id": 3,
+        "name":"Water Filling Machine"
+    },
+    {
+        "id": 4,
+        "name":"Bottle Capping Machine"
+    },
+    {
+        "id": 5,
+        "name":"Bottle Labeling Machine"
+    },
+    {
+        "id": 6,
+        "name":"Bottle Expansion Mold Machine 2"
+    }
+]
