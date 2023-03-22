@@ -126,7 +126,7 @@ const Machines = () => {
         </div>
 
         <div>
-          <form onSubmit={handleAddFormSubmit}>
+          <form onSubmit={handleEditFormSubmit}>
             <h2>Machines</h2>
             <table className={styles.tableMachines}>
               <thead>

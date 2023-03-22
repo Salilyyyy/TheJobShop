@@ -3,6 +3,8 @@ import "./App.css";
 import Login from "./Login/Login";
 import Home from "./Home/Home";
 import Machines from "./Machines/Machines";
+import Job from "./Job/Job";
+import Solve from "./Solve/Solve";
 
 function App() {
   if (!localStorage.userArr) {
@@ -20,6 +22,8 @@ function App() {
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/machines" element={<Machines />} />
+      <Route path="/job" element={<Job />} />
+      <Route path="/solve" element={<Solve />} />
       <Route path="/" element={<Home />} />
       <Route path="*" element={<Navigate to="/login" />} />
     </Routes>
