@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container p {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.operation {
+  padding: 10px 20px;
+  margin: 10px 0;
+  /* border: solid rgb(255, 255, 255) 1px; */
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container .operation h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.operation table {
+  /* border-color: rgb(255, 255, 255); */
+  border-color: black;
+}
+
+.operation button {
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+.buttons button {
+  width: fit-content;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.deleteButton:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}

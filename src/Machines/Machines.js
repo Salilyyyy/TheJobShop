@@ -101,7 +101,7 @@ const Machines = () => {
   return (
     <div>
       <NavBar />
-      <div className="machine" style={style}>
+      <div className={styles.machine} style={style}>
         <div className={styles.tableContainer}>
           <h1>Add a new machine</h1>
           <form onSubmit={handleAddFormSubmit}>
@@ -139,7 +139,7 @@ const Machines = () => {
 
               <tbody>
                 {infors.map((infor) => (
-                  <Fragment>
+                  <Fragment key={infor.id}>
                     {editInforId === infor.id ? (
                       <EditableRow
                         editFormData={editFormData}

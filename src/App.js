@@ -3,7 +3,7 @@ import "./App.css";
 import Login from "./Login/Login";
 import Home from "./Home/Home";
 import Machines from "./Machines/Machines";
-import Job from "./Job/Job";
+import Jobs from "./Job/Jobs";
 import Solve from "./Solve/Solve";
 
 function App() {
@@ -18,11 +18,44 @@ function App() {
   } else {
     console.log("Da co userArr");
   }
+
+  if (!localStorage.machines) {
+    const initialMachineArr = [
+      {
+        id: 1,
+        name: "Bottle Expansion Mold Machine",
+      },
+      {
+        id: 2,
+        name: "Water Cleaning Machine",
+      },
+      {
+        id: 3,
+        name: "Water Filling Machine",
+      },
+      {
+        id: 4,
+        name: "Bottle Capping Machine",
+      },
+      {
+        id: 5,
+        name: "Bottle Labeling Machine",
+      },
+      {
+        id: 6,
+        name: "Bottle Expansion Mold Machine 2",
+      },
+    ];
+    localStorage.machines = JSON.stringify(initialMachineArr);
+    console.log("Đã tạo mảng chứa các machine!");
+  } else {
+    console.log("Mảng chứa các machine đã có sẵn!!");
+  }
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/machines" element={<Machines />} />
-      <Route path="/job" element={<Job />} />
+      <Route path="/job" element={<Jobs />} />
       <Route path="/solve" element={<Solve />} />
       <Route path="/" element={<Home />} />
       <Route path="*" element={<Navigate to="/login" />} />

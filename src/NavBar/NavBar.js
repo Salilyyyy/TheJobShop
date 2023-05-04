@@ -11,7 +11,7 @@ function NavBar(props) {
   }
   return (
     <ul className={styles.nav}>
-      <li>
+      <li className={styles.title}>
         <NavLink to="/"> 🛍️ The Job Shop Problem</NavLink>
       </li>
       <div className={styles.nav1}>
